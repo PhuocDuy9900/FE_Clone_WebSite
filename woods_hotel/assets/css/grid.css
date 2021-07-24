@@ -142,10 +142,10 @@
 
 /* >= Tablet */
 
-@media (min-width: 740px) {
+@media (min-width: 740px) and (max-width: 1123px) {
     .row {
-        margin-left: -36px;
-        margin-right: -36px;
+        margin-left: -12px;
+        margin-right: -12px;
     }
     .col {
         padding-left: -8px;

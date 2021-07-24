@@ -1,7 +1,7 @@
 :root {
     --primary-color: hsl(353, 100%, 63%);
     --text-white-color: hsl(0, 0%, 100%);
-    --text-dark-color: hsl(0, 0%, 100%);
+    --text-dark-color: hsl(0, 0%, 0%);
     --text-alpha-dark-color: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -10,14 +10,4 @@
     align-items: center;
 }
 
-.j-c-space-between {
-    justify-content: space-between;
-}
-.j-c-space-around {
-    justify-content: space-around;
-}
-
-.j-c-flex-end {
-    justify-content: flex-end;
-}
 
