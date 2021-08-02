@@ -353,7 +353,7 @@ img {
 
 /*===== OFFER =====*/
 .offer__bg {
-  background: url('../images/offer.jpg') no-repeat center/cover;
+  background: url('./images/offer.jpg') no-repeat center/cover;
   /* background-attachment: fixed; */
   text-align: center;
 }
