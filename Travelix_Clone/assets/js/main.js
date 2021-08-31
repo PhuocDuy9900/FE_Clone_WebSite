@@ -47,18 +47,38 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 //     speed: 800,
 //     spaceBetween: 100,
 // });
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
+//     // Navigation arrows
+//     // navigation: {
+//     //   nextEl: '.swiper-button-next',
+//     //   prevEl: '.swiper-button-prev',
+//     // },
   
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-});
+//     // And if we need scrollbar
+//     // scrollbar: {
+//     //   el: '.swiper-scrollbar',
+//     // },
+// });
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:false,
+    responsive:{
+        0:{
+            items:1,
+            // autoplay:true,
+            // autoplayTimeout:3000,
+        },
+        600:{
+            items:2,
+            // autoplay:true,
+            // autoplayTimeout:3000,
+        },
+        900:{
+            items:4
+        }
+    }
+})
