@@ -72,7 +72,7 @@ html {
 }
 
 body {
-    margin: var(--header-height) 0 0 0;
+    margin: 0 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--dark-color);
@@ -143,9 +143,10 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background: rgba(54, 19, 84);
+    background: rgba(54, 19, 84, .8);
     transition: all linear .2s;
 }
+
 
 /* Nav */
 .nav {
@@ -256,7 +257,7 @@ img {
 /* Change background header */
 .scroll-header {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
-    background: rgba(54, 19, 84, .8);
+    
 }
 
 /* BUTTONS */
@@ -773,9 +774,6 @@ img {
     border-bottom: 2px solid var(--first-color);
 }
 
-.swiper-container {
-    overflow: visible;
-}
 
 /* NEW */
 .trending__container {
@@ -1019,7 +1017,7 @@ img {
     }
 }
 @media screen and (min-width: 768px) {
-    .bd-grid {
+    .bd-grid{
         width: calc(100% - 4rem);
         margin-left: var(--mb-4);
         margin-right: var(--mb-4);
@@ -1085,5 +1083,19 @@ img {
 
     .trending__img {
         height: 69px;
+    }
+
+    .contact__container {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .offer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

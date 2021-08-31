@@ -32,18 +32,33 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
-function scrollHeader(){
-    const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 48) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
+// function scrollHeader(){
+//     const nav = document.getElementById('header')
+//     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+//     if(this.scrollY >= 48) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+// }
+// window.addEventListener('scroll', scrollHeader)
 
 /*==================== SWIPER JS ====================*/
-const swiper = new Swiper('.swiper-container', {
+// const swiper = new Swiper('.swiper-container', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
+//     speed: 800,
+//     spaceBetween: 100,
+// });
+const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    speed: 800,
-    spaceBetween: 100,
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
 });
