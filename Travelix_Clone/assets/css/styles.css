@@ -1520,8 +1520,6 @@ img {
         font-size: var(--h2-font-size);
     }
 
-    
-
     .footer__description {
         font-size: var(--small-font-size);
         font-weight: var(--font-semi);
@@ -1547,8 +1545,19 @@ img {
     }
 }
 
-@media screen and (min-width : 1220px) {
+@media screen and (min-width : 1440px) {
     .contact__box {
         width: 35%;
+    }
+    .tour__description {
+        padding-left: 16rem;
+        padding-right: 16rem;
+    }
+}
+
+@media screen and (min-width : 1920px){
+    .tour__description {
+        padding-left: 28rem;
+        padding-right: 28rem;
     }
 }
