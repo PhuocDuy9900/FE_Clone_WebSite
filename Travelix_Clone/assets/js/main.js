@@ -32,53 +32,29 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
-// function scrollHeader(){
-//     const nav = document.getElementById('header')
-//     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-//     if(this.scrollY >= 48) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-// }
-// window.addEventListener('scroll', scrollHeader)
+function scrollHeader(){
+    const nav = document.getElementById('header')
+    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 96) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
 /*==================== SWIPER JS ====================*/
-// const swiper = new Swiper('.swiper-container', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     speed: 800,
-//     spaceBetween: 100,
-// });
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     // Navigation arrows
-//     // navigation: {
-//     //   nextEl: '.swiper-button-next',
-//     //   prevEl: '.swiper-button-prev',
-//     // },
-  
-//     // And if we need scrollbar
-//     // scrollbar: {
-//     //   el: '.swiper-scrollbar',
-//     // },
-// });
+
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
-    autoplay:false,
+    margin: 10,
+    autoplay:true,
+    autoplayTimeout:3000,
     responsive:{
         0:{
-            items:1,
-            // autoplay:true,
-            // autoplayTimeout:3000,
+            items:1
         },
         600:{
-            items:2,
-            // autoplay:true,
-            // autoplayTimeout:3000,
+            items:2
         },
         900:{
-            items:4
+            items:3
         }
     }
 })

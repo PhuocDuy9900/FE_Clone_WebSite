@@ -16,14 +16,31 @@
 <body>
     <!--===== HEADER =====-->
     <header class="l-header" id="header">
-        <!-- <nav class="nav__contact bd-grid">
-            <div class="contact__menu">
-                <p class="contact__phone">+84 334 820 317</p>
-                <ul class="contact__list">
-                    <div class="contact__item"><a href="" class="contact__link"></a></div>
-                </ul>
+        <nav class="nav__contact">
+            <div class="nav__contact-menu bd-grid">
+                <div>
+                    <p class="nav__contact-phone">+84 334 820 317</p>
+                    <ul class="nav__contact-list">
+                        <li><a href="#" class="nav__contact-link"><i class='bx bxl-pinterest nav__contact-icon'></i></a>
+                        </li>
+                        <li><a href="#" class="nav__contact-link"><i class='bx bxl-facebook nav__contact-icon'></i></a>
+                        </li>
+                        <li><a href="#" class="nav__contact-link"><i class='bx bxl-twitter nav__contact-icon'></i></a>
+                        </li>
+                        <li><a href="#" class="nav__contact-link"><i class='bx bxl-dribbble nav__contact-icon'></i></a>
+                        </li>
+                        <li><a href="#" class="nav__contact-link"><i class='bx bxl-behance nav__contact-icon'></i></a>
+                        </li>
+                        <li><a href="#" class="nav__contact-link"><i class='bx bxl-linkedin nav__contact-icon'></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="nav__contact-link">Login</a>
+                    <a href="#" class="nav__contact-link">Register</a>
+                </div>
             </div>
-        </nav> -->
+        </nav>
         <nav class="nav bd-grid">
             <div>
                 <a href="#" class="nav__logo">
@@ -33,7 +50,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
                     <li class="nav__item"><a href="#new" class="nav__link">News</a></li>
                     <li class="nav__item"><a href="#offer" class="nav__link">Offers</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -65,7 +82,7 @@
             <div class="search__container bd-grid">
                 <div class="search__menu">
                     <ul class="search__list">
-                        <li class="search__item"><a href="#" class="search__link"><img
+                        <li class="search__item active-search"><a href="#" class="search__link"><img
                                     src="./assets/images/suitcase.png" alt="">HOTELS</a></li>
                         <li class="search__item"><a href="#" class="search__link"><img src="./assets/images/bus.png"
                                     alt="">CAR RENTALS</a></li>
@@ -83,31 +100,28 @@
                     <ul class="search__form-list">
                         <li class="search__form-item">
                             <label for="destination" class="search__label">DESTINATION</label>
-                            <input type="text" class="search__input" id="destination"
-                                placeholder="Enter a location ...">
+                            <input type="text" class="search__input" id="destination">
                         </li>
 
                         <li class="search__form-item">
                             <label for="checkin" class="search__label">CHECK IN</label>
-                            <input type="date" class="search__input" id="checkin" placeholder="">
+                            <input type="date" class="search__input" id="checkin">
                         </li>
 
                         <li class="search__form-item">
                             <label for="checkout" class="search__label">CHECK OUT</label>
-                            <input type="date" class="search__input" id="checkout" placeholder="">
+                            <input type="date" class="search__input" id="checkout">
                         </li>
                         <li class="search__form-item">
                             <label for="adults" class="search__label">ADULTS</label>
-                            <input type="number" min="0" class="search__input" id="adults"
-                                placeholder="Enter a number...">
+                            <input type="number" min="0" max="2" class="search__input" id="adults">
                         </li>
                         <li class="search__form-item">
                             <label for="children" class="search__label">CHILDREN</label>
-                            <input type="number" min="0" class="search__input" id="children"
-                                placeholder="Enter a number...">
+                            <input type="number" min="0" max="2" class="search__input" id="children">
                         </li>
                     </ul>
-                    <a href="#" class="button search__btn">Search...</a>
+                    <a href="#" class="search__btn">Search...</a>
                 </div>
             </div>
         </section>
@@ -178,7 +192,7 @@
         <section class="cta section" id="cta">
             <div class="cta__container bd-grid">
                 <div class="cta__bg"></div>
-                <div class="cta__box">
+                <div class="cta__box bd-grid">
                     <h2 class="section-title">MALDIVES DELUXE<br>PACKAGE</h2>
                     <span class="cta__rating">
                         <i class='bx bxs-star cta__star'></i>
@@ -383,11 +397,47 @@
                         </div>
                     </div>
                 </div>
+                <div class="about__box item">
+                    <div class="about__tag">
+                        <img src="./assets/images/island_t.png" alt="" class="about__tag-img">
+                    </div>
+                    <img src="./assets/images/test_2.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <div class="about__data-tag">
+                            <p class="about__name">CARLA SMITH</p>
+                            <span class="about__time">May 24, 2017</span>
+                        </div>
+                        <div class="about__data-quote">
+                            <p class="about__quote">" Best holliday ever "</p>
+                            <p class="about__quote-text">Nullam eu convallis tortor. Suspendisse potenti. In
+                                faucibus
+                                massa arcu, vitae cursus mi hendrerit nec.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__box item">
+                    <div class="about__tag">
+                        <img src="./assets/images/kayak.png" alt="" class="about__tag-img">
+                    </div>
+                    <img src="./assets/images/test_3.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <div class="about__data-tag">
+                            <p class="about__name">CARLA SMITH</p>
+                            <span class="about__time">May 24, 2017</span>
+                        </div>
+                        <div class="about__data-quote">
+                            <p class="about__quote">" Best holliday ever "</p>
+                            <p class="about__quote-text">Nullam eu convallis tortor. Suspendisse potenti. In
+                                faucibus
+                                massa arcu, vitae cursus mi hendrerit nec.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--===== News / Trending =====-->
-        <section class="trending section" id="trending">
+        <section class="trending section" id="new">
             <h2 class="trending-title">TRENDING NOW</h2>
 
             <div class="trending__container bd-grid">
@@ -458,10 +508,10 @@
             </div>
         </section>
         <!--===== CONTACT =====-->
-        <section class="contact" id="cta">
+        <section class="contact" id="contact">
             <div class="contact__container bd-grid">
                 <div class="contact__bg"></div>
-                <div class="contact__box">
+                <div class="contact__box bd-grid">
                     <h3 class="contact__title">GET IN TOUCH</h3>
                     <ul class="contact__menu">
                         <li class="contact__item"><input type="text" class="contact__input" placeholder="Name..."></li>
@@ -471,8 +521,9 @@
                         <li class="contact__item"><textarea name="" id="" class="contact__input" cols="30" rows="4"
                                 placeholder="Message..."></textarea></li>
                     </ul>
-                    <a href="#" class="button contact__btn">SEND MESSAGE...</a>
+                    <a href="#" class="contact__btn">SEND MESSAGE...</a>
                 </div>
+            </div>
             </div>
         </section>
     </main>
