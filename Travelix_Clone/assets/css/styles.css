@@ -1471,9 +1471,26 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .offer__btn {
-        width: 32%;
+    .offer__tour {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    .offer__box {
+        margin-bottom: 0;
+    }
+
+    .offer__tag {
+        padding: .5rem;
+        font-size: var(--small-font-size);
+        width: 50%;
+    }
+
+    .offer__btn {
+        width: 70%;
+    }
+
 
     .contact__container.bd-grid{
         max-width: 100%;
