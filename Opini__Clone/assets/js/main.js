@@ -70,57 +70,59 @@ function caseStudyTab() {
 listStudy.forEach((l) => l.addEventListener("click", caseStudyTab));
 
 /*===== OWL CAROUSEL =====*/
-$(".featured__slides").owlCarousel({
-    loop: true,
-    margin: 30,
-    autoplay: true,
-    autoplayTimeout: 8000,
-    autoplayHoverPause: true,
-    nav: true,
-    navText: ['<i class="pe-7s-angle-left"></i>', '<i class="pe-7s-angle-right"></i>'],
-    dots: false,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 2,
-            autoplayTimeout: 10000,
-        },
-        1200: {
-            items: 3,
-            autoplayTimeout: 12000,
-        },
-    },
-}),
-    $(".services__slides").owlCarousel({
-        autoplayTimeout: 8000,
+$(window).on('load', () => {
+    $(".featured__slides").owlCarousel({
         loop: true,
-        nav: true,
-        dots: false,
         margin: 30,
-        autoplayHoverPause: true,
         autoplay: true,
-        items: 1,
-        navText: ["<i class='pe-7s-angle-left'></i>", "<i class='pe-7s-angle-right'></i>"],
+        autoplayTimeout: 8000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ['<i class="pe-7s-angle-left"></i>', '<i class="pe-7s-angle-right"></i>'],
+        dots: false,
         responsive: {
             0: {
-                items: 1
+                items: 1,
             },
-            768: {
-                items: 2
+            600: {
+                items: 2,
+                autoplayTimeout: 10000,
             },
-            1440: {
-                items: 3
-            }
+            1200: {
+                items: 3,
+                autoplayTimeout: 12000,
+            },
         },
+    }),
+        $(".services__slides").owlCarousel({
+            autoplayTimeout: 8000,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 30,
+            autoplayHoverPause: true,
+            autoplay: true,
+            items: 1,
+            navText: ["<i class='pe-7s-angle-left'></i>", "<i class='pe-7s-angle-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1440: {
+                    items: 3
+                }
+            },
+        });
+    $(".feedback__slides").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: false,
+        autoplayTimeout: 8000,
+        autoplayHoverPause: true,
+        items: 1,
+        dots: true,
     });
-$(".feedback__slides").owlCarousel({
-    loop: true,
-    margin: 30,
-    autoplay: false,
-    autoplayTimeout: 8000,
-    autoplayHoverPause: true,
-    items: 1,
-    dots: true,
-});
+})
