@@ -39,6 +39,15 @@
         --small-font-size: 0.875rem;
     }
 }
+@media screen and (min-width: 1024px){
+    :root {
+        --body-font: "Open Sans", sans-serif;
+        --h1-font-size: 2.125rem;
+        --h3-font-size: 1.375rem;
+        --normal-font-size: 0.9375rem;
+        --small-font-size: 0.9375rem;
+    }
+}
 
 /*===== Margin =====*/
 :root {
@@ -132,6 +141,7 @@ img {
     text-transform: uppercase;
     line-height: 1.5;
     font-weight: 600;
+    font-family: var(--body-font);
     cursor: pointer;
     user-select: none;
     transition: 0.5s;
@@ -299,16 +309,14 @@ img {
 
 .nav__item {
     border-top: 1px solid #dbeefd;
-}
-.nav__item:last-child() {
-    margin-bottom: 0;
+    transition: .5s;
 }
 
 .nav__link {
     font-size: var(--normal-font-size);
     line-height: 50px;
 }
-.nav__link.active {
+.nav__item .nav__link.active-link {
     color: var(--first-color);
 }
 
@@ -343,12 +351,41 @@ img {
         transform: scale(1.4);
     }
 }
+.show-desktop {
+    display: none;
+}
 /*===== SHOW NAVBAR/Active Link/ Scroll Top icon =====*/
 .show-menu {
     left: 0;
     opacity: 1;
 }
-.active {
+.active-link {
+    position: relative;
+}
+.active-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--bg-linear);
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.active-tab {
+    position: relative;
+}
+.active-tab::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--bg-linear);
+    transition: .5s;
+    -webkit-transition: .5s;
 }
 .scrolltop {
     position: fixed;
@@ -381,7 +418,7 @@ img {
 }
 /*===== SHOW NAVBAR =====*/
 .scroll-header {
-    background-color: var(--white-color-alt);
+    background-color: var(--white-color);
     box-shadow: 0px 0px 6px var(--first-color-alt);
 }
 /*===== HOME =====*/
@@ -582,8 +619,14 @@ img {
 .case__link {
     font-weight: var(--font-semi);
 }
-.case__item.active .case__link {
+.case__item.active-tab .case__link {
     color: var(--first-color);
+}
+.case__item.active-tab .case__link::before {
+    width: 100%;
+}
+.case__item:hover .case__link::before {
+    width: 100%;
 }
 
 .case__tab-item {
