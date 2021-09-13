@@ -837,6 +837,10 @@
         left: 0;
         filter: brightness(0.9);
     }
+
+    .blog__data-sub .blog__box {
+        grid-template-columns: 168px 1fr;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -864,5 +868,8 @@
     }
     .services__slides.owl-carousel .owl-nav.disabled {
         display: block;
+    }
+    .blog__data-sub .blog__box {
+        grid-template-columns: 198px 1fr;
     }
 }
