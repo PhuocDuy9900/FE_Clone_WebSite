@@ -726,6 +726,7 @@ img {
 /*===== QUOTES =====*/
 .quotes {
     background-color: #fcfbfb;
+    opacity: .9;
 }
 .quotes__container .quotes__content {
     text-align: center;
@@ -1802,8 +1803,11 @@ img {
     background: var(--white-color);
 }
 
+
+
 .footer__box .footer__list li {
     margin-bottom: 12px;
+    display: block;
 }
 .footer__box .footer__list li:last-child {
     margin-bottom: 0;
@@ -1811,6 +1815,7 @@ img {
 
 .footer__box .footer__list li a {
     position: relative;
+    display: inline-block;
     font-size: 13px;
     color: #353535;
     line-height: 1.5;

@@ -1,6 +1,5 @@
 /*===== Show Navbar =====*/
 const showMenu = (navId, toggleId) => {
-    console.log("á");
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId);
 
