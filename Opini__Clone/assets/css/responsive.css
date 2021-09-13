@@ -793,6 +793,12 @@
     .featured {
         margin-top: -60px;
     }
+    .featured__container .featured__slides:hover.owl-carousel .owl-nav {
+        opacity: 1;
+    visibility: visible;
+        left: -22px;
+        width: 104%;
+    }
 
     /*===== SERVICES =====*/
     .services__content {
@@ -845,7 +851,13 @@
     .featured {
         margin-top: -10px;
     }
-    
+    .featured__container .featured__slides:hover.owl-carousel .owl-nav {
+        opacity: 1;
+        visibility: visible;
+        left: -24px;
+        width: 103.5%;
+    }
+
     /*===== SERVICES =====*/
     .services__content {
         bottom: -180px;
