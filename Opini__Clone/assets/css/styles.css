@@ -80,6 +80,7 @@ body {
     font-size: var(--normal-font-size);
     color: var(--dark-color);
     line-height: 1.8;
+    overflow-x : hidden;
 }
 h1,
 h2,
