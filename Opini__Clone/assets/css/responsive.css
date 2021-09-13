@@ -836,7 +836,6 @@
         background-size: cover;
         top: -65px;
         left: 0;
-        filter: brightness(0.9);
     }
 
     .blog__data-sub .blog__box {
@@ -872,5 +871,12 @@
     }
     .blog__data-sub .blog__box {
         grid-template-columns: 198px 1fr;
+    }
+    .quotes__container .quotes__content h1::before {
+        width: 211px;
+        height: 154px;
+        background-size: cover;
+        top: -56px;
+        left: 0;
     }
 }
