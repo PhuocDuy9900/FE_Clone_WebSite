@@ -92,6 +92,10 @@ $(window).on('load', () => {
                 items: 3,
                 autoplayTimeout: 12000,
             },
+            2000: {
+                items: 3,
+                autoplayTimeout: 12000,
+            },
         },
     }),
         $(".services__slides").owlCarousel({

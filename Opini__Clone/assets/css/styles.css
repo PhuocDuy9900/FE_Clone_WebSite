@@ -250,6 +250,7 @@ img {
 .section__description {
     text-align: center;
     font-size: var(--small-font-size);
+    margin: 0 auto;
 }
 .ptb {
     padding-top: 60px;
@@ -723,6 +724,9 @@ img {
 }
 
 /*===== QUOTES =====*/
+.quotes {
+    background-color: #fcfbfb;
+}
 .quotes__container .quotes__content {
     text-align: center;
 }
@@ -1712,6 +1716,9 @@ img {
     border-color: var(--white-color);
 }
 /*===== FOOTER =====*/
+.footer {
+    background-color: #f6f9fc;
+}
 .footer__container {
     row-gap: 2rem;
 }
