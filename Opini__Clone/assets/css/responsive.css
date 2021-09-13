@@ -44,6 +44,7 @@
     .featured__slides.owl-theme .owl-nav [class*="owl-"] {
         width: 40px;
         height: 40px;
+        pointer-events: fill;
     }
     /*===== CASE STUDY =====*/
     .case__tab__container {
@@ -796,9 +797,10 @@
     }
     .featured__container .featured__slides:hover.owl-carousel .owl-nav {
         opacity: 1;
-    visibility: visible;
+        visibility: visible;
         left: -22px;
         width: 104%;
+        pointer-events: none;
     }
 
     /*===== SERVICES =====*/
