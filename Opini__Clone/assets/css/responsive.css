@@ -864,7 +864,7 @@
 
     /*===== SERVICES =====*/
     .services__content {
-        bottom: -180px;
+        bottom: -130px;
     }
     .services__slides.owl-carousel .owl-nav.disabled {
         display: block;
